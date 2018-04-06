@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+  var x = document.getElementsByClassName("mozart-accompaniment")[0];
+  console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
+
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
   let onMainMenu = false; //Whether or not they're on the main menu
