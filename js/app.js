@@ -6,19 +6,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       audios[1].readyState === 4 &&
       audios[2].readyState === 4 &&
       audios[3].readyState === 4) {
-      console.log('all audio loaded');
+      // console.log('all audio loaded');
       clearInterval(audioLoadDetect);
     }
   }, 100);
-  // console.log(document.getElementsByClassName("mozart-accompaniment")[0].readyState);
-  // console.log(document.getElementsByClassName("jasmine-accompaniment")[0].readyState);
-  // console.log(document.getElementsByClassName("horse-accompaniment")[0].readyState);
-  // console.log(document.getElementsByClassName("hamilton-accompaniment")[0].readyState);
-
-  console.log('updated with condition');
-  // console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
-  // console.log(x.readyState);
-  // console.log(x.duration);
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
