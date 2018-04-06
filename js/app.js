@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       audios[2].readyState === 4 &&
       audios[3].readyState === 4) {
       console.log('all audio loaded');
-      audioLoadDetect.clearInterval();
+      clearInterval(audioLoadDetect);
     }
   }, 100);
   // console.log(document.getElementsByClassName("mozart-accompaniment")[0].readyState);
