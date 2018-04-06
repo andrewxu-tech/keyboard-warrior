@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   window.setInterval(function() {
+    console.log('inside setinterval');
     let x = document.getElementsByClassName('audio-to-load');
     if (x[0].readyState === x[1].readyState === x[2].readyState === x[3].readyState === 4) {
       console.log('all audio loaded');
     }
-  }, 100)
+  }, 100);
   // console.log(document.getElementsByClassName("mozart-accompaniment")[0].readyState);
   // console.log(document.getElementsByClassName("jasmine-accompaniment")[0].readyState);
   // console.log(document.getElementsByClassName("horse-accompaniment")[0].readyState);
