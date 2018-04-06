@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var x = document.getElementsByClassName("mozart-accompaniment")[0];
+  console.log('hello');
   console.log(x.readyState);
   console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
   console.log(x.duration);
