@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  var x = document.getElementsByClassName("mozart-accompaniment")[0];
+  document.getElementsByClassName("mozart-accompaniment")[0].readyState;
+  document.getElementsByClassName("jasmine-accompaniment")[0].readyState;
+  document.getElementsByClassName("horse-accompaniment")[0].readyState;
+  document.getElementsByClassName("hamilton-accompaniment")[0].readyState;
 
-  console.log('hello');
-  console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
-  console.log(x.readyState);
-  console.log(x.duration);
+  console.log('updated with 4 audio');
+  // console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
+  // console.log(x.readyState);
+  // console.log(x.duration);
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
