@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var x = document.getElementsByClassName("mozart-accompaniment")[0];
+
   console.log('hello');
-  console.log(x.readyState);
   console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
+  console.log(x.readyState);
   console.log(x.duration);
 
 // ~~~META~~~
@@ -639,7 +640,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 // Default selections for the starting piece.
-  piece = mozartArray;
-  basicUnit = 500;
-  audioSource = 'accomp';
+  piece = jasmineArray;
+  basicUnit = 1000;
+  audioSource = 'mo-li-hua';
 });
