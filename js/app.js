@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  let audios = document.getElementsByClassName('audio-to-load');
   window.setInterval(function() {
     console.log('inside setinterval');
-    let x = document.getElementsByClassName('audio-to-load');
-    if (x[0].readyState === x[1].readyState === x[2].readyState === x[3].readyState === 4) {
+    console.log(audios[0].readyState);
+    console.log(audios[1].readyState);
+    console.log(audios[2].readyState);
+    console.log(audios[3].readyState);
+    if (audios[0].readyState === audios[1].readyState === audios[2].readyState === audios[3].readyState === 4) {
       console.log('all audio loaded');
     }
   }, 100);
