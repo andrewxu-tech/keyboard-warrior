@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-
   var x = document.getElementsByClassName("mozart-accompaniment")[0];
+  console.log(x.readyState);
   console.log("Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0));
+  console.log(x.duration);
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
