@@ -1,0 +1,132 @@
+.falling-notes {
+  max-width: 1200px;
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: -1;
+
+  .note {
+    width: 50px / 1200px * 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3A6EA5;
+    position: absolute;
+    top: 0vh;
+    z-index: 99;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 36px;
+    font-family: $default-font-family;
+    line-height: 1.35em;
+    color: $highlights;
+    animation: fall 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+    &.almost {
+      background-color: $highlights;
+      color: $dark-content;
+    }
+
+    &.correct {
+      animation: correct 2s;
+      animation-timing-function: ease-out;
+      background-color: $highlights;
+      color: $dark-content;
+      animation-fill-mode: forwards;
+      top: 60vh;
+    }
+
+    @keyframes correct {
+      0% {
+        box-shadow: 0 0 0 0 $highlights;
+        opacity: 1;
+      }
+
+      100% {
+        box-shadow: 0 0 0 100px $highlights;
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    @keyframes fall {
+        0% {
+          top: 0px;
+          opacity: 1;
+        }
+        50% {
+          top: 60vh;
+          opacity: 1;
+        }
+        100% {
+          top: 100vh;
+          opacity: 0;
+        }
+    }
+
+    &.q {
+      margin-left: 25px / 1200px * 100%;
+    }
+    &.a {
+      margin-left: 75px / 1200px * 100%;
+    }
+    &.w {
+      margin-left: 125px / 1200px * 100%;
+    }
+    &.s {
+      margin-left: 175px / 1200px * 100%;
+    }
+    &.e {
+      margin-left: 225px / 1200px * 100%;
+    }
+    &.d {
+      margin-left: 275px / 1200px * 100%;
+    }
+    &.f {
+      margin-left: 375px / 1200px * 100%;
+    }
+    &.t {
+      margin-left: 425px / 1200px * 100%;
+    }
+    &.g {
+      margin-left: 475px / 1200px * 100%;
+    }
+    &.y {
+      margin-left: 525px / 1200px * 100%;
+    }
+    &.h {
+      margin-left: 575px / 1200px * 100%;
+    }
+    &.j {
+      margin-left: 675px / 1200px * 100%;
+    }
+    &.i {
+      margin-left: 725px / 1200px * 100%;
+    }
+    &.k {
+      margin-left: 775px / 1200px * 100%;
+    }
+    &.o {
+      margin-left: 825px / 1200px * 100%;
+    }
+    &.l {
+      margin-left: 875px / 1200px * 100%;
+    }
+    &.p {
+      margin-left: 925px / 1200px * 100%;
+    }
+    &.\; {
+      margin-left: 975px / 1200px * 100%;
+    }
+    &.\' {
+      margin-left: 1075px / 1200px * 100%;
+    }
+    &.\] {
+      margin-left: 1125px / 1200px * 100%;
+    }
+  }
+}

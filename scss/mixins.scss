@@ -1,0 +1,132 @@
+// Make a button disappear
+
+.disappear {
+  animation: disappear 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+  0% {
+    box-shadow: 0 0 0 0 $highlights;
+    opacity: 1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 600px $highlights;
+    opacity: 0;
+    display: none;
+  }
+}
+
+// Slide from bottom
+
+.slide-from-bottom {
+  animation: slide-from-bottom 3s;
+}
+
+@keyframes slide-from-bottom {
+  0% {
+    top: 100vh;
+  }
+  50% {
+    top: 100vh;
+  }
+  100% {
+    top: 55vh;
+  }
+}
+
+// Slide from left
+
+.slide-from-left {
+  animation: slide-from-left 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-from-left {
+  0% {
+    margin-left: -150vh;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+// Slide from right
+
+.slide-from-right {
+  animation: slide-from-right 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-from-right {
+  0% {
+    margin-left: 150vh;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+// Button is popping
+
+.pop {
+  animation: pop 1s infinite;
+}
+
+@keyframes pop {
+  0% {
+    margin-top: 20px;
+    margin-left: -400px;
+    width: 800px;
+    height: 200px;
+  }
+  50% {
+    margin-top: 25px;
+    width: 775px;
+    height: 190px;
+    margin-left: -387.5px;
+  }
+  100% {
+    margin-top: 20px;
+    width: 800px;
+    height: 200px;
+    margin-left: -400px;
+  }
+}
+
+// Fall from top
+
+.fall-from-top {
+  animation: fall-from-top 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fall-from-top {
+  0% {
+    top: -200vh;
+  }
+  100% {
+    top: -50;
+  }
+}
+
+// Fade
+
+.fade {
+  animation: fade 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  100% {
+    opacity: 0;
+  }
+}
+
+// Hide an element
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,39 @@
+.strings {
+  max-width: 1200px;
+  display: inline-flex;
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+
+  .line {
+    width: 10px;
+    background-color: $light-background;
+    -webkit-transition: background-color 0.3s;
+    margin: 0 20px;
+  }
+
+  .vibrating {
+    background-color: $highlights;
+    -webkit-transition: background-color 0.3s;
+  }
+
+  .short {
+    height: 80vh;
+  }
+
+  .long {
+    height: 90vh;
+  }
+
+  .small {
+    width: 25px;
+  }
+
+  .large {
+    width: 50px;
+  }
+}

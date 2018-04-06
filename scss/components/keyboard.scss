@@ -1,0 +1,54 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 77.5vh;
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: $highlights;
+    text-align: center;
+    font-size: 45px;
+    line-height: 1.3em;
+
+    .key {
+      width: 80px;
+      height: 80px;
+      border-radius: 30px;
+    }
+  }
+
+  .top-row {
+    .key {
+      border: 10px solid $light-content;
+      background-color: $dark-content;
+    }
+
+    .top-row-pressed {
+      background-color: $light-content;
+      color: $dark-content;
+    }
+
+    .space-fill{
+      width: 80px;
+    }
+  }
+
+  .bottom-row {
+    .key {
+      border: 10px solid $dark-content;
+      background-color: $light-content;
+    }
+
+    .bottom-row-pressed {
+      background-color: $dark-content;
+      color: $light-content;
+    }
+
+    .space-fill{
+      width: 30px;
+    }
+  }
+}

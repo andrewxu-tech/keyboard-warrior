@@ -1,0 +1,495 @@
+.disappear {
+  animation: disappear 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes disappear {
+  0% {
+    box-shadow: 0 0 0 0 white;
+    opacity: 1; }
+  100% {
+    box-shadow: 0 0 0 600px white;
+    opacity: 0;
+    display: none; } }
+.slide-from-bottom {
+  animation: slide-from-bottom 3s; }
+
+@keyframes slide-from-bottom {
+  0% {
+    top: 100vh; }
+  50% {
+    top: 100vh; }
+  100% {
+    top: 55vh; } }
+.slide-from-left {
+  animation: slide-from-left 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-from-left {
+  0% {
+    margin-left: -150vh; }
+  100% {
+    margin-left: 0; } }
+.slide-from-right {
+  animation: slide-from-right 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-from-right {
+  0% {
+    margin-left: 150vh; }
+  100% {
+    margin-left: 0; } }
+.pop {
+  animation: pop 1s infinite; }
+
+@keyframes pop {
+  0% {
+    margin-top: 20px;
+    margin-left: -400px;
+    width: 800px;
+    height: 200px; }
+  50% {
+    margin-top: 25px;
+    width: 775px;
+    height: 190px;
+    margin-left: -387.5px; }
+  100% {
+    margin-top: 20px;
+    width: 800px;
+    height: 200px;
+    margin-left: -400px; } }
+.fall-from-top {
+  animation: fall-from-top 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes fall-from-top {
+  0% {
+    top: -200vh; }
+  100% {
+    top: -50; } }
+.fade {
+  animation: fade 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes fade {
+  100% {
+    opacity: 0; } }
+.hidden {
+  display: none !important; }
+
+* {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+                   /* Non-prefixed version, currently
+supported by Chrome and Opera */ }
+
+html {
+  background: #03CFFF; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
+
+button:focus {
+  outline: 0; }
+
+.mobile {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px; }
+  .mobile h1 {
+    margin-top: 10vh;
+    font-size: 72px; }
+  .mobile h2 {
+    margin-top: 100px;
+    font-size: 36px; }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 77.5vh; }
+  main .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    line-height: 1.3em; }
+    main .row .key {
+      width: 80px;
+      height: 80px;
+      border-radius: 30px; }
+  main .top-row .key {
+    border: 10px solid #FFB063;
+    background-color: #FF7F00; }
+  main .top-row .top-row-pressed {
+    background-color: #FFB063;
+    color: #FF7F00; }
+  main .top-row .space-fill {
+    width: 80px; }
+  main .bottom-row .key {
+    border: 10px solid #FF7F00;
+    background-color: #FFB063; }
+  main .bottom-row .bottom-row-pressed {
+    background-color: #FF7F00;
+    color: #FFB063; }
+  main .bottom-row .space-fill {
+    width: 30px; }
+
+header {
+  position: absolute;
+  width: 100vw;
+  top: 3vh;
+  left: 50%;
+  margin-left: -500px;
+  z-index: 55; }
+  header h1 {
+    text-align: left;
+    font-family: "Dosis", sans-serif;
+    color: white;
+    font-size: 200px;
+    margin-bottom: 3vh;
+    width: 1000px; }
+  header h2 {
+    text-align: right;
+    font-family: "Dosis", sans-serif;
+    color: white;
+    font-size: 40px;
+    width: 1000px; }
+  header .enter-button {
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    border-radius: 75px;
+    font-size: 120px;
+    color: white;
+    border: 10px solid #FFB063;
+    background-color: #FF7F00;
+    position: absolute;
+    top: 55vh;
+    left: 500px;
+    margin-left: -400px;
+    margin-top: 20px; }
+
+.background-flag {
+  z-index: 49;
+  width: 100%;
+  background-color: black;
+  height: 120%;
+  position: absolute;
+  top: -50vh;
+  transform: skewY(160deg);
+  opacity: 0.2; }
+
+.become-top-bar {
+  animation: become-top-bar 2s;
+  animation-fill-mode: forwards; }
+
+@keyframes become-top-bar {
+  0% {
+    top: -50vh;
+    transform: skewY(160deg);
+    height: 120%; }
+  100% {
+    top: 0vh;
+    transform: skewY(180deg);
+    height: 10%; } }
+.strings {
+  max-width: 1200px;
+  display: inline-flex;
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto; }
+  .strings .line {
+    width: 10px;
+    background-color: #79E6FF;
+    -webkit-transition: background-color 0.3s;
+    margin: 0 20px; }
+  .strings .vibrating {
+    background-color: white;
+    -webkit-transition: background-color 0.3s; }
+  .strings .short {
+    height: 80vh; }
+  .strings .long {
+    height: 90vh; }
+  .strings .small {
+    width: 25px; }
+  .strings .large {
+    width: 50px; }
+
+.playhead {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  top: 60vh;
+  z-index: -2; }
+
+.playback-circles {
+  height: 100px;
+  max-width: 1200px;
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  z-index: -2; }
+  .playback-circles .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 10px solid white;
+    background-color: #03CFFF;
+    margin-top: -20px; }
+  .playback-circles .space-fill.small {
+    width: 25px; }
+  .playback-circles .space-fill.large {
+    width: 50px; }
+
+.main-menu {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  width: 950px;
+  height: auto;
+  z-index: 98;
+  margin: 0 -475px;
+  background-color: #79E6FF;
+  border: 10px solid white;
+  color: white;
+  border-radius: 75px;
+  font-family: "Dosis", sans-serif; }
+  .main-menu .chevron {
+    margin: 240px 15px;
+    display: inline-block;
+    font-size: 75px; }
+    .main-menu .chevron.chevron-left {
+      float: left; }
+    .main-menu .chevron.chevron-right {
+      float: right; }
+  .main-menu .piece-select {
+    width: 700px;
+    margin: 0 10px;
+    display: inline-block; }
+  .main-menu .piece-selection {
+    margin: 3% auto;
+    padding: 3%;
+    background-color: #03CFFF;
+    border: 10px solid #03CFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    text-align: center; }
+    .main-menu .piece-selection.selected {
+      background-color: #FF7F00;
+      border-color: white; }
+    .main-menu .piece-selection:hover {
+      border-color: white; }
+    .main-menu .piece-selection .composer {
+      flex-basis: 15%; }
+    .main-menu .piece-selection .title {
+      flex-basis: 75%;
+      margin-left: 5%; }
+    .main-menu .piece-selection .difficulty {
+      flex-basis: 10%; }
+    .main-menu .piece-selection .small-text {
+      font-weight: 400; }
+
+.start-button {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  top: 65vh;
+  left: 50%;
+  margin-left: -250px;
+  background-color: #FF7F00;
+  z-index: 50;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  border-radius: 75px;
+  font-size: 120px;
+  color: white;
+  border: 10px solid #FFB063; }
+
+.falling-notes {
+  max-width: 1200px;
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: -1; }
+  .falling-notes .note {
+    width: 4.1666666667%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3A6EA5;
+    position: absolute;
+    top: 0vh;
+    z-index: 99;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Dosis", sans-serif;
+    line-height: 1.35em;
+    color: white;
+    animation: fall 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; }
+    .falling-notes .note.almost {
+      background-color: white;
+      color: #FF7F00; }
+    .falling-notes .note.correct {
+      animation: correct 2s;
+      animation-timing-function: ease-out;
+      background-color: white;
+      color: #FF7F00;
+      animation-fill-mode: forwards;
+      top: 60vh; }
+@keyframes correct {
+  0% {
+    box-shadow: 0 0 0 0 white;
+    opacity: 1; }
+  100% {
+    box-shadow: 0 0 0 100px white;
+    opacity: 0;
+    display: none; } }
+@keyframes fall {
+  0% {
+    top: 0px;
+    opacity: 1; }
+  50% {
+    top: 60vh;
+    opacity: 1; }
+  100% {
+    top: 100vh;
+    opacity: 0; } }
+    .falling-notes .note.q {
+      margin-left: 2.0833333333%; }
+    .falling-notes .note.a {
+      margin-left: 6.25%; }
+    .falling-notes .note.w {
+      margin-left: 10.4166666667%; }
+    .falling-notes .note.s {
+      margin-left: 14.5833333333%; }
+    .falling-notes .note.e {
+      margin-left: 18.75%; }
+    .falling-notes .note.d {
+      margin-left: 22.9166666667%; }
+    .falling-notes .note.f {
+      margin-left: 31.25%; }
+    .falling-notes .note.t {
+      margin-left: 35.4166666667%; }
+    .falling-notes .note.g {
+      margin-left: 39.5833333333%; }
+    .falling-notes .note.y {
+      margin-left: 43.75%; }
+    .falling-notes .note.h {
+      margin-left: 47.9166666667%; }
+    .falling-notes .note.j {
+      margin-left: 56.25%; }
+    .falling-notes .note.i {
+      margin-left: 60.4166666667%; }
+    .falling-notes .note.k {
+      margin-left: 64.5833333333%; }
+    .falling-notes .note.o {
+      margin-left: 68.75%; }
+    .falling-notes .note.l {
+      margin-left: 72.9166666667%; }
+    .falling-notes .note.p {
+      margin-left: 77.0833333333%; }
+    .falling-notes .note.\; {
+      margin-left: 81.25%; }
+    .falling-notes .note.\' {
+      margin-left: 89.5833333333%; }
+    .falling-notes .note.\] {
+      margin-left: 93.75%; }
+
+.score-bar {
+  height: 10%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 50;
+  width: 1200px;
+  font-size: 60px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  padding: 15px; }
+  .score-bar .display {
+    float: left; }
+  .score-bar .score {
+    float: right; }
+  .score-bar .back-to-main {
+    position: absolute;
+    right: 30%;
+    height: 70%;
+    color: white;
+    font-size: 36px;
+    border: 7px solid #FFB063;
+    background-color: #FF7F00;
+    padding: 0 20px;
+    border-radius: 30px; }
+
+.post-game {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  width: 700px;
+  height: auto;
+  z-index: 50;
+  margin: 0 -350px;
+  background-color: #03CFFF;
+  border: 10px solid white;
+  color: white;
+  border-radius: 75px;
+  font-family: "Dosis", sans-serif; }
+  .post-game .message {
+    text-align: center;
+    margin: 5%;
+    font-size: 100px; }
+  .post-game .gif {
+    text-align: center; }
+  .post-game .achievements {
+    text-align: center;
+    margin: 5%;
+    font-size: 48px;
+    line-spacing: 1.2em; }
+  .post-game .back-button {
+    background-color: #FF7F00;
+    color: white;
+    border: 10px solid #FFB063;
+    margin: auto;
+    width: 80%;
+    margin: 0 10% 10% 10%;
+    border-radius: 75px;
+    padding: 10px 20px;
+    font-size: 48px; }
+
+/*# sourceMappingURL=style.css.map */

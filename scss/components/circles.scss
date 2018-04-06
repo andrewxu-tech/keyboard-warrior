@@ -1,0 +1,30 @@
+.playback-circles {
+  height: 100px;
+  max-width: 1200px;
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  z-index: -2;
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 10px solid $highlights;
+    background-color: $window-background;
+    margin-top: -20px;
+  }
+
+  .space-fill.small {
+    width: 25px;
+  }
+
+  .space-fill.large {
+    width: 50px;
+  }
+}

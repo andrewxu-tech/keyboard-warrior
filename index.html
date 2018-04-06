@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keyboard Warrior</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,800" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="background-flag"></div>
+    <header>
+      <h1>Keyboard Warrior</h1>
+      <h2>A game by Andrew Xu</h2>
+      <button class="enter-button">Enter</button>
+    </header>
+    <div class="main-menu hidden">
+      <div class="menu-page">
+        <div class="chevron chevron-left">
+          <i class="fas fa-chevron-circle-left"></i>
+        </div>
+        <div class="piece-select page-1">
+          <div class="piece-selection selected" data-piece-name="mo-li-hua">
+            <div class="composer">
+              Anonymous<div class="small-text">(Chinese Traditional)</div>
+            </div>
+            <div class="title">
+              Mo Li Hua<div class="small-text">("Jasmine Flower")</div>
+            </div>
+            <div class="difficulty">
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="piece-selection" data-piece-name="mozart">
+            <div class="composer">
+              Mozart, <div class="small-text">Wolfgang Amadeus</div>
+            </div>
+            <div class="title">
+              Andante<div class="small-text">from "Piano Sonata No.16"</div>
+            </div>
+            <div class="difficulty">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+          </div>
+          <div class="piece-selection" data-piece-name="bach">
+            <div class="composer">
+              Bach, <div class="small-text">Johann Sebastian</div>
+            </div>
+            <div class="title">
+              Air<div class="small-text">from "Orchestral Suite No.3"</div>
+            </div>
+            <div class="difficulty">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="piece-select page-2 hidden">
+          <div class="piece-selection" data-piece-name="hamilton">
+            <div class="composer">
+              Miranda, <div class="small-text">Lin-Manuel</div>
+            </div>
+            <div class="title">
+              Dear Theodosia<div class="small-text">from "Hamilton: An American   Musical"</div>
+            </div>
+            <div class="difficulty">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+          </div>
+          <div class="piece-selection" data-piece-name="racing-horses">
+            <div class="composer">
+              Huang<div class="small-text">Huai Hai</div>
+            </div>
+            <div class="title">
+              Sai Ma<div class="small-text">("Racing Horses")</div>
+            </div>
+            <div class="difficulty">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="chevron chevron-right">
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+      </div>
+      <button class="start-button">Start</button>
+    </div>
+    <div class="score-bar">
+      <div class="display"></div>
+      <button class="back-to-main hidden">Back to Main Menu</button>
+      <div class="score hidden">
+        <i class="fas fa-trophy"></i>
+        <span class="score-span"></span>
+      </div>
+    </div>
+    <main class="keyboard">
+      <div class="row top-row">
+        <div class="key q">Q</div>
+        <div class="key w">W</div>
+        <div class="key e">E</div>
+        <div class="space-fill"></div>
+        <div class="key t">T</div>
+        <div class="key y">Y</div>
+        <div class="space-fill"></div>
+        <div class="key i">I</div>
+        <div class="key o">O</div>
+        <div class="key p">P</div>
+        <div class="space-fill"></div>
+        <div class="key ]">]</div>
+      </div>
+      <div class="row bottom-row">
+        <div class="space-fill"></div>
+        <div class="key a">A</div>
+        <div class="key s">S</div>
+        <div class="key d">D</div>
+        <div class="key f">F</div>
+        <div class="key g">G</div>
+        <div class="key h">H</div>
+        <div class="key j">J</div>
+        <div class="key k">K</div>
+        <div class="key l">L</div>
+        <div class="key ;">;</div>
+        <div class="key '">'</div>
+        <div class="space-fill"></div>
+      </div>
+    </main>
+    <div class="strings">
+      <div class="space-fill small"></div>
+      <div class="line short q"></div>
+      <div class="line long a"></div>
+      <div class="line short w"></div>
+      <div class="line long s"></div>
+      <div class="line short e"></div>
+      <div class="line long d"></div>
+      <div class="space-fill large"></div>
+      <div class="line long f"></div>
+      <div class="line short t"></div>
+      <div class="line long g"></div>
+      <div class="line short y"></div>
+      <div class="line long h"></div>
+      <div class="space-fill large"></div>
+      <div class="line long j"></div>
+      <div class="line short i"></div>
+      <div class="line long k"></div>
+      <div class="line short o"></div>
+      <div class="line long l"></div>
+      <div class="line short p"></div>
+      <div class="line long ;"></div>
+      <div class="space-fill large"></div>
+      <div class="line long '"></div>
+      <div class="line short ]"></div>
+      <div class="space-fill small"></div>
+    </div>
+    <div class="playhead">
+      <div class="playback-line"></div>
+    </div>
+    <div class="playback-circles">
+      <div class="space-fill small"></div>
+      <div class="circle q"></div>
+      <div class="circle a"></div>
+      <div class="circle w"></div>
+      <div class="circle s"></div>
+      <div class="circle e"></div>
+      <div class="circle d"></div>
+      <div class="space-fill large"></div>
+      <div class="circle f"></div>
+      <div class="circle t"></div>
+      <div class="circle g"></div>
+      <div class="circle y"></div>
+      <div class="circle h"></div>
+      <div class="space-fill large"></div>
+      <div class="circle j"></div>
+      <div class="circle i"></div>
+      <div class="circle k"></div>
+      <div class="circle o"></div>
+      <div class="circle l"></div>
+      <div class="circle p"></div>
+      <div class="circle ;"></div>
+      <div class="space-fill large"></div>
+      <div class="circle '"></div>
+      <div class="circle ]"></div>
+      <div class="space-fill small"></div>
+    </div>
+    <div class="falling-notes">
+    </div>
+    <div class="post-game hidden">
+      <div class="message"></div>
+      <div class="gif"></div>
+      <div class="achievements">
+        You got <span class="number-correct"></span> out of <span class="total-notes"></span> notes on time, <span class="number-almost"></span> notes almost right and <span class="number-wrong"></span> wrong notes.
+      </div>
+      <button class="back-button">Main Menu</button>
+    </div>
+  </body>
+  <audio class="music-playing"></audio>
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCG4al9bwk-TXqV_NcIykix71sHzvjCxjI",
+      authDomain: "keyboard-warrior-33109.firebaseapp.com",
+      databaseURL: "https://keyboard-warrior-33109.firebaseio.com",
+      projectId: "keyboard-warrior-33109",
+      storageBucket: "",
+      messagingSenderId: "793031451646"
+    };
+    firebase.initializeApp(config);
+  </script> -->
+</html>

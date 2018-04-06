@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: $default-font-family;
+    font-weight: $default-font-weight;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
+}
+
+html {
+  background: $window-background;
+}
+
+// Disable all scrolling
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+button:focus {
+  outline:0;
+}
+
+.mobile {
+  background-color: black;
+  color: $highlights;
+  text-align: center;
+  padding: 30px;
+
+  h1 {
+    margin-top: 10vh;
+    font-size: 72px;
+  }
+
+  h2 {
+    margin-top: 100px;
+    font-size: 36px;
+  }
+}

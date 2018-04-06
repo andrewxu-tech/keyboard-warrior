@@ -1,0 +1,8 @@
+.playhead {
+  width: 100%;
+  height: 10px;
+  background-color: $highlights;
+  position: absolute;
+  top: 60vh;
+  z-index: -2;
+}

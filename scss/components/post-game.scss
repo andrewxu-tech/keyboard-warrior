@@ -1,0 +1,43 @@
+.post-game {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  width: 700px;
+  height: auto;
+  z-index: 50;
+  margin: 0 -350px;
+  background-color: $window-background;
+  border: 10px solid $highlights;
+  color: $highlights;
+  border-radius: 75px;
+  font-family: $default-font-family;
+
+  .message {
+    text-align: center;
+    margin: 5%;
+    font-size: 100px;
+  }
+
+  .gif {
+    text-align: center;
+  }
+
+  .achievements {
+    text-align: center;
+    margin: 5%;
+    font-size: 48px;
+    line-spacing: 1.2em;
+  }
+
+  .back-button {
+    background-color: $dark-content;
+    color: $highlights;
+    border: 10px solid $light-content;
+    margin: auto;
+    width: 80%;
+    margin: 0 10% 10% 10%;
+    border-radius: 75px;
+    padding: 10px 20px;
+    font-size: 48px;
+  }
+}

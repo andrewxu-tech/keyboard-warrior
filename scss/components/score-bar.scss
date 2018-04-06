@@ -1,0 +1,33 @@
+.score-bar {
+  height: 10%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 50;
+  width: 1200px;
+  font-size: 60px;
+  font-family: $default-font-family;
+  color: white;
+  padding: 15px;
+
+  .display {
+    float: left;
+  }
+
+  .score {
+    float: right;
+  }
+
+  .back-to-main {
+    position: absolute;
+    right: 30%;
+    height: 70%;
+    color: $highlights;
+    font-size: 36px;
+    border: 7px solid $light-content;
+    background-color: $dark-content;
+    padding: 0 20px;
+    border-radius: 30px;
+  }
+}
