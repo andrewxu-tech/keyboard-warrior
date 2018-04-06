@@ -2,6 +2,10 @@
 
 ![Image of Title Screen](./readme-images/title-screen.png)
 
+##Play Online:
+
+https://chen-yangxu.github.io/keyboard-warrior/
+
 ##Game Instructions
 
 **Press the right key on the keyboard when the falling circular note is in the middle of its corresponding white circle.**
