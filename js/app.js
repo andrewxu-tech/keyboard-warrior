@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   let audios = document.getElementsByClassName('audio-to-load');
-  window.setInterval(function() {
+  let audioLoadDetect;
+  audioLoadDetect = window.setInterval(function() {
     if (audios[0].readyState === 4 &&
       audios[1].readyState === 4 &&
       audios[2].readyState === 4 &&
       audios[3].readyState === 4) {
       console.log('all audio loaded');
+      audioLoadDetect.clearInterval();
     }
   }, 100);
   // console.log(document.getElementsByClassName("mozart-accompaniment")[0].readyState);
