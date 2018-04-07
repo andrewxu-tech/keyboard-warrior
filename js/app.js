@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
+// ~~~LOADING LARGE AUDIO FILES UPON OPENING~~~
   let audios = document.getElementsByClassName('audio-to-load');
   let audioLoadDetect;
   audioLoadDetect = window.setInterval(function() {
@@ -6,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       audios[1].readyState === 4 &&
       audios[2].readyState === 4 &&
       audios[3].readyState === 4) {
-      // console.log('all audio loaded');
+      console.log('all audio loaded');
       clearInterval(audioLoadDetect);
     }
   }, 100);
