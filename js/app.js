@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let timePassedCounter = null;
   let endScreenTimeout = null;
   document.getElementsByClassName('start-button')[0].addEventListener('click', function(){
+    audios = document.getElementsByClassName('audio-to-load');
     audioLoadDetect = window.setInterval(function() {
       checkAudioLoaded();
     }, 100);
