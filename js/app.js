@@ -212,6 +212,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let timePassedCounter = null;
   let endScreenTimeout = null;
   document.getElementsByClassName('start-button')[0].addEventListener('click', function(){
+    audioLoadDetect = window.setInterval(function() {
+      if (audios[0].readyState === 4 &&
+        audios[1].readyState === 4 &&
+        audios[2].readyState === 4 &&
+        audios[3].readyState === 4) {
+        console.log('all audio loaded on play');
+        clearInterval(audioLoadDetect);
+      }
+    }, 100);
     calculateTimings();
     document.getElementsByClassName('score-span')[0].innerHTML = ` : 0/${Object.keys(piece).length}`;
     document.getElementsByClassName('main-menu')[0].classList.remove('fall-from-top');
