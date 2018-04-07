@@ -657,4 +657,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   piece = jasmineArray;
   basicUnit = 1000;
   audioSource = 'mo-li-hua';
+  timingArrayAbsoluteUnrounded = [basicUnit * 8];
 });
