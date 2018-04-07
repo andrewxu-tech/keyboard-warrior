@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // ~~~LOADING LARGE AUDIO FILES UPON OPENING~~~
   let audios = document.getElementsByClassName('audio-to-load');
   let audioLoadDetect;
-  audioLoadDetect = window.setInterval(function() {
-    if (audios[0].readyState === 4 &&
-      audios[1].readyState === 4 &&
-      audios[2].readyState === 4 &&
-      audios[3].readyState === 4) {
-      console.log('all audio loaded');
-      clearInterval(audioLoadDetect);
-    }
-  }, 100);
+  // audioLoadDetect = window.setInterval(function() {
+  //   if (audios[0].readyState === 4 &&
+  //     audios[1].readyState === 4 &&
+  //     audios[2].readyState === 4 &&
+  //     audios[3].readyState === 4) {
+  //     console.log('all audio loaded');
+  //     clearInterval(audioLoadDetect);
+  //   }
+  // }, 100);
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
