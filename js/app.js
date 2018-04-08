@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-// ~~~LOADING LARGE AUDIO FILES UPON OPENING~~~
+// ~~~LOADING LARGE AUDIO FILES~~~
   let audios;
   // let audios = document.getElementsByClassName('audio-to-load');
   let audioLoadDetect;
@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       clearInterval(audioLoadDetect);
     }
   }
+
+  audios = document.getElementsByClassName('audio-to-load');
+  audioLoadDetect = window.setInterval(function() {
+    checkAudioLoaded();
+  }, 500);
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
