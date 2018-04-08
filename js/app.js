@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function resetTimer() {
     clearTimeout(t);
-    t = setTimeout(logout, 30000)
+    t = setTimeout(logout, 60000);
   }
 
 // ~~~META~~~

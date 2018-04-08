@@ -492,4 +492,24 @@ header {
     padding: 10px 20px;
     font-size: 48px; }
 
+.inactivity {
+  background-color: #FF7F00;
+  color: white;
+  border: 10px solid #FFB063;
+  margin: auto;
+  width: 30%;
+  margin: 0 10% 10% 10%;
+  border-radius: 75px;
+  padding: 10px 20px;
+  font-size: 48px; }
+
+.inactive {
+  background-color: black;
+  text-align: center; }
+
+h1.inactive {
+  font-size: 74px;
+  margin: 20vh auto;
+  color: white; }
+
 /*# sourceMappingURL=style.css.map */
