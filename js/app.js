@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // ~~~LOADING LARGE AUDIO FILES UPON OPENING~~~
   let audios;
   // let audios = document.getElementsByClassName('audio-to-load');
-  // let audioLoadDetect;
+  let audioLoadDetect;
   // audioLoadDetect = window.setInterval(function() {
   //   checkAudioLoaded();
   // }, 100);
@@ -217,10 +217,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let timePassedCounter = null;
   let endScreenTimeout = null;
   document.getElementsByClassName('start-button')[0].addEventListener('click', function(){
-    audios = document.getElementsByClassName('audio-to-load');
-    audioLoadDetect = window.setInterval(function() {
-      checkAudioLoaded();
-    }, 100);
     calculateTimings();
     document.getElementsByClassName('score-span')[0].innerHTML = ` : 0/${Object.keys(piece).length}`;
     document.getElementsByClassName('main-menu')[0].classList.remove('fall-from-top');
@@ -229,9 +225,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     _this = this;
     playSoundEffect('start-piece');
     window.setTimeout(function() {
+      audios = document.getElementsByClassName('audio-to-load');
+      audioLoadDetect = window.setInterval(function() {
+        checkAudioLoaded();
+      }, 10);
+      playMusic(audioSource);
       document.getElementsByClassName('start-button')[0].classList.add('hidden');
       document.getElementsByClassName('main-menu')[0].classList.add('hidden');
-      playMusic(audioSource);
       onMainMenu = false;
       gameInProgress = true;
       _this.classList.add('hidden');
