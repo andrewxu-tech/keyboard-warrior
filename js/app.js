@@ -161,14 +161,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.getElementsByTagName('h1')[0].classList.add('fade');
       document.getElementsByTagName('h2')[0].classList.add('fade');
       document.getElementsByClassName('background-flag')[0].classList.add('become-top-bar');
-      document.getElementsByTagName('header')[0].classList.add('hidden');
       window.setTimeout(function() {
         document.getElementsByTagName('h1')[0].classList.remove('fade');
         document.getElementsByTagName('h2')[0].classList.remove('fade');
         document.getElementsByTagName('h1')[0].classList.add('hidden');
         document.getElementsByTagName('h2')[0].classList.add('hidden');
-      }, 1000);
-      window.setTimeout(function() {
+        document.getElementsByTagName('header')[0].classList.add('hidden');
         _this.classList.add('hidden');
       }, 2000);
       displayMainMenu();

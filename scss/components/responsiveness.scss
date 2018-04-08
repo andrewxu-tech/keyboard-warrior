@@ -1,3 +1,19 @@
+@media (max-width: 2500px) {
+  body {
+    zoom: 110%;
+    // transform: scale(0.9);
+    // transform-origin: 0 0;
+  }
+}
+
+@media (max-width: 2000px) {
+  body {
+    zoom: 100%;
+    // transform: scale(0.9);
+    // transform-origin: 0 0;
+  }
+}
+
 @media (max-width: 1500px) {
   body {
     zoom: 90%;
