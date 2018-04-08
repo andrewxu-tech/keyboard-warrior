@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   audios = document.getElementsByClassName('audio-to-load');
   audioLoadDetect = window.setInterval(function() {
+    audios = document.getElementsByClassName('audio-to-load');
     checkAudioLoaded();
   }, 500);
 
