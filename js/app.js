@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
 // ~~~INACTIVITY~~~
-  var inactivityTime = function () {
+var inactivityTime = function () {
     var t;
     window.onload = resetTimer;
     // DOM Events
@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function logout() {
         alert("You are now logged out.")
         //location.href = 'logout.php'
-      }
+    }
 
-      function resetTimer() {
+    function resetTimer() {
         clearTimeout(t);
         t = setTimeout(logout, 3000)
         // 1000 milisec = 1 sec
-      }
-    };
+    }
+};
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
@@ -245,24 +245,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     _this = this;
     playSoundEffect('start-piece');
     window.setTimeout(function() {
-      audios var inactivityTime = function () {
-    var t;
-    window.onload = resetTimer;
-    // DOM Events
-    document.onmousemove = resetTimer;
-    document.onkeypress = resetTimer;
-
-    function logout() {
-        alert("You are now logged out.")
-        //location.href = 'logout.php'
-    }
-
-    function resetTimer() {
-        clearTimeout(t);
-        t = setTimeout(logout, 3000)
-        // 1000 milisec = 1 sec
-    }
-};= document.getElementsByClassName('audio-to-load');
+      audios = document.getElementsByClassName('audio-to-load');
       audioLoadDetect = window.setInterval(function() {
         checkAudioLoaded();
       }, 10);
