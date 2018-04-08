@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       audios[1].readyState === 4 &&
       audios[2].readyState === 4 &&
       audios[3].readyState === 4) {
-      console.log('all audio loaded');
-      // clearInterval(audioLoadDetect);
+      // console.log('all audio loaded');
+      clearInterval(audioLoadDetect);
     }
   }
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.onkeypress = resetTimer;
 
   function logout() {
-    window.location.replace("./inactive.html");
+    window.location.replace("./i.html");
   }
 
   function resetTimer() {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 //
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  window.location.replace("./mobile.html");
+  window.location.replace("./m.html");
   }
 
 // ~~~ONLOAD EVENTS~~~
@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.getElementsByTagName('h1')[0].classList.add('fade');
       document.getElementsByTagName('h2')[0].classList.add('fade');
       document.getElementsByClassName('background-flag')[0].classList.add('become-top-bar');
+      document.getElementsByTagName('header')[0].classList.add('hidden');
       window.setTimeout(function() {
         document.getElementsByTagName('h1')[0].classList.remove('fade');
         document.getElementsByTagName('h2')[0].classList.remove('fade');

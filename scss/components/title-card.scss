@@ -5,6 +5,7 @@ header {
   left: 50%;
   margin-left: -500px;
   z-index: 55;
+  height: 470px;
 
   h1 {
     text-align: left;
@@ -22,6 +23,7 @@ header {
     font-size: 40px;
     width: 1000px;
   }
+
   .enter-button {
     width: 800px;
     height: 200px;
@@ -32,7 +34,7 @@ header {
     border: 10px solid $light-content;
     background-color: $dark-content;
     position: absolute;
-    top: 55vh;
+    top: 110%;
     left: 500px;
     margin-left: -400px;
     margin-top: 20px;

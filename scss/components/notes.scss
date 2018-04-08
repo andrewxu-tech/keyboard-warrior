@@ -37,7 +37,7 @@
       background-color: $highlights;
       color: $dark-content;
       animation-fill-mode: forwards;
-      top: 60vh;
+      top: 57%;
     }
 
     @keyframes correct {
@@ -59,7 +59,7 @@
           opacity: 1;
         }
         50% {
-          top: 60vh;
+          top: 57%;
           opacity: 1;
         }
         100% {

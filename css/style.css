@@ -16,11 +16,11 @@
 
 @keyframes slide-from-bottom {
   0% {
-    top: 100vh; }
+    top: 150vh; }
   50% {
-    top: 100vh; }
+    top: 150vh; }
   100% {
-    top: 55vh; } }
+    top: 110%; } }
 .slide-from-left {
   animation: slide-from-left 3s;
   animation-fill-mode: forwards; }
@@ -103,6 +103,9 @@ html, body {
   height: 100%;
   overflow: hidden; }
 
+html {
+  height: 900px !important; }
+
 button:focus {
   outline: 0; }
 
@@ -158,7 +161,8 @@ header {
   top: 3vh;
   left: 50%;
   margin-left: -500px;
-  z-index: 55; }
+  z-index: 55;
+  height: 470px; }
   header h1 {
     text-align: left;
     font-family: "Dosis", sans-serif;
@@ -182,7 +186,7 @@ header {
     border: 10px solid #FFB063;
     background-color: #FF7F00;
     position: absolute;
-    top: 55vh;
+    top: 110%;
     left: 500px;
     margin-left: -400px;
     margin-top: 20px; }
@@ -242,14 +246,14 @@ header {
   height: 10px;
   background-color: white;
   position: absolute;
-  top: 60vh;
+  top: 57%;
   z-index: -2; }
 
 .playback-circles {
   height: 100px;
   max-width: 1200px;
   position: absolute;
-  top: 60vh;
+  top: 57%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -370,7 +374,7 @@ header {
       background-color: white;
       color: #FF7F00;
       animation-fill-mode: forwards;
-      top: 60vh; }
+      top: 57%; }
 @keyframes correct {
   0% {
     box-shadow: 0 0 0 0 white;
@@ -384,7 +388,7 @@ header {
     top: 0px;
     opacity: 1; }
   50% {
-    top: 60vh;
+    top: 57%;
     opacity: 1; }
   100% {
     top: 100vh;
@@ -511,5 +515,12 @@ h1.inactive {
   font-size: 74px;
   margin: 20vh auto;
   color: white; }
+
+@media (max-width: 1500px) {
+  body {
+    zoom: 90%; } }
+@media (max-width: 1300px) {
+  body {
+    zoom: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

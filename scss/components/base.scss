@@ -22,6 +22,10 @@ html, body {
   overflow: hidden;
 }
 
+html {
+  height: 900px !important;
+}
+
 button:focus {
   outline:0;
 }
