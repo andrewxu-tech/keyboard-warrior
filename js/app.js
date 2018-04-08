@@ -34,10 +34,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     t = setTimeout(logout, 30000)
   }
 
-  document.getElementsByClassName('inactivity')[0].addEventListener('click', function() {
-    window.location.replace("./index.html");
-  })
-
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
   let onMainMenu = false; //Whether or not they're on the main menu
