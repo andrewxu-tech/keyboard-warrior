@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       audios[2].readyState === 4 &&
       audios[3].readyState === 4) {
       console.log('all audio loaded');
-      clearInterval(audioLoadDetect);
+      // clearInterval(audioLoadDetect);
     }
   }
 
@@ -230,10 +230,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     _this = this;
     playSoundEffect('start-piece');
     window.setTimeout(function() {
-      audios = document.getElementsByClassName('audio-to-load');
-      audioLoadDetect = window.setInterval(function() {
-        checkAudioLoaded();
-      }, 10);
+      // audios = document.getElementsByClassName('audio-to-load');
+      // audioLoadDetect = window.setInterval(function() {
+      //   checkAudioLoaded();
+      // }, 10);
       playMusic(audioSource);
       document.getElementsByClassName('start-button')[0].classList.add('hidden');
       document.getElementsByClassName('main-menu')[0].classList.add('hidden');
