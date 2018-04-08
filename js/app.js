@@ -18,23 +18,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-// ~~~INACTIVITY~~~
-    var t;
-    window.onload = resetTimer;
-    // DOM Events
-    document.onmousemove = resetTimer;
-    document.onkeypress = resetTimer;
+// ~~~INACTIVITY DETECTOR~~~
+  var t;
+  window.onload = resetTimer;
+  // DOM Events
+  document.onmousemove = resetTimer;
+  document.onkeypress = resetTimer;
 
-    function logout() {
-        alert("You are now logged out.")
-        //location.href = 'logout.php'
-    }
+  function logout() {
+    window.location.replace("./inactive.html");
+  }
 
-    function resetTimer() {
-        clearTimeout(t);
-        t = setTimeout(logout, 3000)
-        // 1000 milisec = 1 sec
-    }
+  function resetTimer() {
+    clearTimeout(t);
+    t = setTimeout(logout, 30000)
+  }
+
+  document.getElementsByClassName('inactivity')[0].addEventListener('click', function() {
+    window.location.replace("./index.html");
+  })
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
