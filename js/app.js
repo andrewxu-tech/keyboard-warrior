@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
 // ~~~LOADING LARGE AUDIO FILES UPON OPENING~~~
-  let audios = document.getElementsByClassName('audio-to-load');
+  let audios;
+  // let audios = document.getElementsByClassName('audio-to-load');
   let audioLoadDetect;
   audioLoadDetect = window.setInterval(function() {
     checkAudioLoaded();
