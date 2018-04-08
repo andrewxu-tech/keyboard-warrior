@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
 // ~~~INACTIVITY~~~
-var inactivityTime = function () {
     var t;
     window.onload = resetTimer;
     // DOM Events
@@ -36,7 +35,6 @@ var inactivityTime = function () {
         t = setTimeout(logout, 3000)
         // 1000 milisec = 1 sec
     }
-};
 
 // ~~~META~~~
   let gameInProgress = false; // Whether or not they've pressed the start button
