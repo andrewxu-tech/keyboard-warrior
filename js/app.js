@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (audios[0].readyState === 4 &&
       audios[1].readyState === 4 &&
       audios[2].readyState === 4 &&
-      audios[3].readyState === 4) {
+      audios[3].readyState === 4 &&
+      audios[4].readyState === 4) {
       // console.log('all audio loaded');
       clearInterval(audioLoadDetect);
     }
