@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //   checkAudioLoaded();
   // }, 100);
   audios = document.getElementsByClassName('audio-to-load');
-  
+
   function checkAudioLoaded() {
     if (audios[0].readyState === 4 &&
       audios[1].readyState === 4 &&
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       clearInterval(audioLoadDetect);
     }
   }
+  checkAudioLoaded();
 
 // ~~~INACTIVITY DETECTOR~~~
   var t;
