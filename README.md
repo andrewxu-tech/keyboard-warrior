@@ -1,25 +1,22 @@
-#Keyboard Warrior
+# Keyboard Warrior
 
 ![Image of Title Screen](./readme-images/title-screen.png)
 
-##Game Instructions
+## Game Instructions
 
 **Press the right key on the keyboard when the falling circular note is in the middle of its corresponding white circle.**
 
-##Technologies Used
+## Technologies Used
 
-- HTML 5
-- CSS 3
-- JavaScript
+- HTML 5 (with HTML audio)
+- CSS 3 (with animations)
+- JavaScript (no libraries)
 - Google Fonts
-- GitHub
-- Git
-- HTML Audio
-- Animation
+- Git & GitHub
 - Pro Tools 11
 - Sibelius 7
 
-##Approach Taken
+## Approach Taken
 
 The basic premise of this rhythm game has already been explored in numerous existing games, but I set out to create the added complextiy of mimicking a piano keyboard with the QWERTY keyboard layout, as though overlaying a piano keyboard on top of the QWERTY keyboard and finding where the keys correspond. This included incorporating 24 different key strokes, specifically `Q`, `A`, `W`, `E`, `D`, `F`, `T`, `G`, `Y`, `H`, `J`, `I`, `K`, `O`, `L`, `P` ,`;` ,`'` , and `]`, far more than the average rhythm game. This added complexity allowed for the experience of playing the game to be more similar to the experience of playing a real instrument, since whereas in a typical rhythm game, like Guitar Hero, the notes produced have an arbitrary relationship with the key pressed, the letters on the keyboard in Keyboard Warrior are 1:1 mapped to their corresponding notes on the piano.
 
@@ -41,6 +38,3 @@ If the game only visually rewarded the player for getting the notes "right", it 
 An oddity in the creation of this game in particular lead to one of the most repetitive parts of the development process: inputting every single note of every single song as keystroke-duration pairs. This lead to the creation of enormous objects, of which the following is an excerpt. This object is used to create the timing and key presses for the falling notes.
 
 ![An excerpt of an object for creating a song](./readme-images/songobject.png)
-
-
-
