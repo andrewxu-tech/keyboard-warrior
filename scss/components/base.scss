@@ -16,9 +16,15 @@ html {
 }
 
 // Disable all scrolling
-html, body {
+html {
   margin: 0;
   height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
   overflow: hidden;
 }
 
