@@ -54,6 +54,87 @@ If the game only visually rewarded the player for getting the notes "right", it 
 
 Here are some of the code snippets in this project that I found the most interesting and challenging to write.
 
+```javascript
+function checkWin(keyName) { //Everything here is really subjective and depends on what it feels like to play - tactile experience?
+  if (keyName === piece[noteCounter][0]){
+    let correctTime = timingArrayAbsolute[noteCounter];
+    // console.log(correctTime);
+    // console.log(noteCounter);
+    if(timePassed >= correctTime - (basicUnit / 4)) {
+      // console.log('You got the note within 0.25 of basicUnit of the right time!');
+      currentNote.classList.add('correct');
+      correctNote();
+      scoreDisplay('Perfect!');
+      return;
+    } else if(timePassed >= correctTime - (basicUnit / 3)) {
+      // console.log('You got the note within 0.5 of basicUnit of the right time!');
+      scoreDisplay('A bit too fast!');
+      currentNote.classList.add('almost');
+      almostNote();
+      return;
+    } else if(timePassed >= correctTime - 1000) {
+      // console.log('You got the note within 1 second of the right time!');
+      scoreDisplay('Too early!');
+      wrongNote();
+      return;
+    }
+    // console.log('You got the current note right, but over 1 second early.');
+    scoreDisplay('Far too early!');
+    wrongNote();
+    return;
+  } else if (noteCounter > 0 && keyName === piece[noteCounter - 1][0]){
+    let correctTime = timingArrayAbsolute[noteCounter - 1];
+    if(timePassed < correctTime + (basicUnit / 3)) {
+      // console.log('You got the note within 0.25 of basicUnit late!');
+      currentNote.classList.add('correct');
+      correctNote();
+      scoreDisplay('Perfect!');
+      return;
+    } else if (timePassed < correctTime + (basicUnit / 2)) {
+      // console.log('You got the note within 0.5 of basicUnit late!');
+      scoreDisplay('A bit too slow!');
+      currentNote.classList.add('almost');
+      almostNote();
+      return;
+    } else if(timePassed < correctTime + 1000) {
+      // console.log('You got the note within 1 second late!');
+      scoreDisplay('Far too slow!')
+      wrongNote();
+      return;
+    } else {
+      // console.log('Wrong note');
+      scoreDisplay('Wrong note!');
+      wrongNote();
+      return;
+    }
+  }
+  if (keyName === piece[noteCounter + 1][0]){
+    // console.log('You skipped a note');
+    scoreDisplay('Skipped a note!');
+    wrongNote();
+    return;
+  } else {
+    // console.log('Wrong note');
+    scoreDisplay('Wrong note!');
+    wrongNote();
+    return;
+  }
+  if (keyName === piece[noteCounter + 2][0]) {
+    // console.log('You skipped 2 notes');
+    scoreDisplay('Skipped two notes!');
+    wrongNote();
+    return;
+  } else {
+    // console.log('Wrong note');
+    scoreDisplay('Wrong note!');
+    wrongNote();
+    return;
+  }
+}
+```
+
+This code snippet is used to decide how the game rewards a keystroke. It contains the conditions for which a key press would be considered correct, too early or too late. The `basicUnit` is used to calculate the window for correctness or wrongness, which changes depending on the speed of the song. It took a lot of experimenting to find timings that made the game feel the most rewarding to play.
+
 _Example 2: A song object._
 
 ```javascript
