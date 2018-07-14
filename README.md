@@ -10,15 +10,15 @@
 * [Approach Taken](#approach-taken)
 * [Code Examples](#code-examples)
 
-##Play Online:
+## Play Online:
 
 https://andrewxu.tech/keyboard-warrior/
 
-##Game Instructions
+## Game Instructions
 
 **Press the right key on the keyboard when the falling circular note is in the middle of its corresponding white circle.**
 
-##Technologies Used
+## Technologies Used
 
 - HTML 5
 - CSS 3
@@ -31,7 +31,7 @@ https://andrewxu.tech/keyboard-warrior/
 - Pro Tools 11
 - Sibelius 7
 
-##Approach Taken
+## Approach Taken
 
 The basic premise of this rhythm game has already been explored in numerous existing games, but I set out to create the added complextiy of mimicking a piano keyboard with the QWERTY keyboard layout, as though overlaying a piano keyboard on top of the QWERTY keyboard and finding where the keys correspond. This included incorporating 24 different key strokes, specifically `Q`, `A`, `W`, `E`, `D`, `F`, `T`, `G`, `Y`, `H`, `J`, `I`, `K`, `O`, `L`, `P` ,`;` ,`'` , and `]`, far more than the average rhythm game. This added complexity allowed for the experience of playing the game to be more similar to the experience of playing a real instrument, since whereas in a typical rhythm game, like Guitar Hero, the notes produced have an arbitrary relationship with the key pressed, the letters on the keyboard in Keyboard Warrior are 1:1 mapped to their corresponding notes on the piano.
 
